@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", "application" %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
+
+
+
+
+
+  <title>IIPS | Placement Cell</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<header width="100%">
+<div id="notice"><%=flash[:notice] %></div>
+  <td height="46" >
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+         <tr>
+            <td height="46" bgcolor="#000000"><link rel="stylesheet" href="dropdown.css" type="text/css" media="screen, projection"/>
+            <div style="position:relative; height:35px; width:100%;">
+          <div style="position:absolute; left:-30px; top:-13px; width:1000px;"> 
+          <ul class="dropdown">
+
+                  <li><%= link_to 'IIPS Placement Cell', users_path %></li>
+
+
+                  <li><%= link_to 'About Us', about_index_path %></li>
+                  <li><%= link_to 'Procedure', procedure_index_path %></li>
+
+                  <li><%= link_to 'Why Recruit', why_recruit_index_path %>
+
+        <ul class="sub_menu">
+                   <li><%= link_to 'Our Recruiters', our_recruiters_path %></li>
+                  <!-- <li><%= link_to 'Selection Process', selection_process_index_path %></li> -->
+                   <li><%= link_to 'Alumni', alumni_index_path %></li>
+                   <li><%= link_to 'R & D', rnd_index_path %></li>
+                </ul>
+               </li>
+            <li><a>For Students</a>
+                <ul class="sub_menu">
+                   <li><%= link_to 'Preparation Portal', preparation_portal_index_path %></li>
+                   <li><%= link_to 'Placement Policy', placement_policy_index_path %></li>
+                 </ul>
+           </li>
+           <!-- <li><a>Results</a>
+                <ul class="sub_menu">
+                        
+                   <li><%= link_to 'Written Test', written_results_path , :style =>'font-size:12px; display:block;text-align:left'%></li>
+
+                        <li><%= link_to 'Interview', interview_results_path %></li>
+                        <li><%= link_to 'Final Results', final_results_path %></li>
+               </ul>
+              </li> -->
+           <li><%= link_to 'Placed Students', placed_students_path %></li>
+
+           <li><%= link_to 'Contact Us', contact_us_path %></li>
+                         
+                          <li><a>Account</a>
+                              <ul class="sub_menu">
+                        <% if  session[:user_id] %>
+                  
+                   <li><%= link_to  'Edit Profile', contact_us_path %></li>
+                   <li> <%= link_to "log out", logout_path, method: "delete" %></li>
+                      <%else%>
+                         
+                   <li><%= link_to 'Register', new_user_path %></li>
+                  
+                    
+                   <li><%= link_to 'Log in ', login_path %></li>
+                <%end%>
+
+
+                </ul>
+                </li>
+                
+                
+          </ul>
+                
+        </div>
+        </div>
+
+   </td>
+ </tr>
+</tbody>
+</table>
+ </td>       
+</header>
+
+<div class="clearfooter"></div>
+<footer id="footer">
+    <td>
+<table width=100%>
+
+
+<tr>
+
+<td align=left>
+
+  
+
+ 
+</td>
+
+<td align=right>
+
+ <!--<a href="courtcases.php" class="footer_links">Court Cases</a> -->
+
+<%= link_to('Home', users_path, :class=>'footer_links') %>
+<%= link_to('About Us', about_index_path, :class=>'footer_links') %>
+<%= link_to('Procedure', procedure_index_path, :class=>'footer_links') %>
+<%= link_to('Why Recruit', why_recruit_index_path, :class=>'footer_links') %>
+<%= link_to('Placed Students', placed_students_path, :class=>'footer_links') %>
+<%= link_to('Contact Us', contact_us_path, :class=>'footer_links') %>
+
+ 
+</td>
+
+</tr>
+
+</table>
+
+</td>
+</footer>
+  </tr>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+/*right rail "follow callout" */
+#follow-callout{position:fixed;min-height:300px;top:24%;right:0;margin:0;width:0;overflow:visible;padding-left:28px;}
+#follow-callout select{max-width:250px}
+#follow-callout ul.tab-nav{position:absolute;left:0;top:240px;width:300px;}
+#follow-callout ul.tab-nav li a{background:#9e0b0f url(/~/media/Images/coresite/ui/sprite.ashx) 2px -188px no-repeat; padding-left: 25px; }
+#follow-callout ul.tab-nav li.on a { background:#efefef url(/~/media/Images/coresite/ui/sprite.ashx) 2px -212px no-repeat; }
+/*rotate the tabs for capable browsers - ie specific stuff in normal.css*/
+.csstransforms #follow-callout ul.tab-nav {
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+#follow-callout .tabs-content{position:relative;height:400px;overflow:hidden;width:290px;}
+#follow-callout aside{min-height:300px;width:290px;position:absolute;top:0;left:0;display:none;opacity:0; 
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-ms-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;	
+}
+#follow-callout aside.open{opacity:1;display:block}
+/*mainly right rail stuff*/
+aside{margin:0 0 20px;}
+aside h1{margin-bottom:10px;}
+aside p{padding:0 0 20px;margin:0;}
+aside p.more,aside.blue p.more,aside.yellow p.more{background:url(/~/media/Images/coresite/ui/sprite2.ashx) 0 -422px no-repeat;line-height:22px;padding-left:30px;margin-left:0;padding-bottom:18px;}
+aside li:last-child p{padding-bottom:0;}
+aside img{max-width:260px;margin-bottom:10px;margin-left:20px;height:auto;}
+aside.yellow h1, aside.blue h1{padding:20px 20px 15px;}
+aside.yellow h1{background:url(/~/media/Images/coresite/ui/sprite3.ashx) 0 -442px no-repeat;padding-left:30px;}
+aside.yellow p,aside.blue p{margin-left:20px;margin-right:20px;}
+aside.yellow p{margin-left:30px;font-family:georgia, serif;font-style:italic;}
+aside.yellow{background:#FFC600;color:#efefef;}
+aside.blue{background:#efefef;color:#fff;}
+aside.blue h1{color:#fff}
+aside.blue a{color:#fff;}
+aside.blue a:hover,aside.yellow a:hover{text-decoration:none;}
+aside.blue a:hover p.more{text-decoration:underline;}
+/*right rail "follow callout" */
+#follow-callout{position:relative;margin:10px 20px 0;z-index:1500;}
+#follow-callout select {max-width: 250px;}
+/*follow callout navigation*/
+#follow-callout ul.tab-nav{padding:0;margin:0;}
+#follow-callout ul.tab-nav li
+{
+	float:left;
+	margin-right:5px;
+}
+#follow-callout ul.tab-nav li a
+{
+	display:block;
+	padding:5px 10px 5px 10px;
+	background:#9e0b0f;
+	color:#fff;font:normal 15px UbuntuRegular,Verdana, Arial, Helvetica, sans-serif;
+	text-transform: none;
+}
+#follow-callout ul.tab-nav li.on a{background:#efefef; }
+#follow-callout ul.tab-nav li a:hover{text-decoration:none;}
+/*prevent fous. init content panes as hidden*/
+/*.js #follow-callout, .js #follow-callout aside{display:none;}*/
+#follow-callout aside{padding:20px;background:#efefef;color:#fff;position:relative;display:none;}
+#follow-callout aside.open{display:block;}
+#follow-callout select{display: block; margin-bottom: 10px;}
+#follow-callout p.more{padding:8px 0;margin:0;border-top:1px solid #3f4d5d;text-transform:uppercase;background:none;font-family:arial,sans-serif;font-weight:normal;}
+#follow-callout a{color:#fff;}
+#follow-callout .tabs-content ul{margin:0 0 10px;padding:0}
+#follow-callout .tabs-content li{margin-bottom:10px;}
+#apply-location { width: 250px; }
+/* aside events - blue */
+aside.blue {
+	overflow:auto;
+}
+aside.blue.events-sidebar ul {
+	background: white;
+	width: 92%;
+	color: black;
+	padding: 0;
+	border-left: 1px solid #efefef;
+}
+aside.blue.events-sidebar ul li {
+	padding: 12px 20px;
+	border-bottom: 1px solid #efefef;
+}
+aside.blue.events-sidebar ul li span
+{
+}
+aside.blue.events-sidebar ul li a {
+	color: #006599;
+	display: block;
+	font-weight: bold;
+}
+aside.blue.events-sidebar ul li a:hover {
+	text-decoration: underline;
+}
+aside.blue.now-news-sidebar ul {
+	background: white;
+	width: 92%;
+	color: black;
+	padding: 0;
+	border-left: 1px solid #efefef;
+}
+aside.blue.now-news-sidebar ul li 
+{
+}
+aside.blue.now-news-sidebar ul li a {
+	color: #006599;
+	display: block;
+	padding: 12px 20px;
+	border-bottom: 1px solid #efefef;
+	font-weight: bold;
+}
+aside.blue.now-news-sidebar ul li a:hover {
+	background: url(/~/media/Images/coresite/ui/right-arrow.ashx) 98% center no-repeat #fec900;
+}

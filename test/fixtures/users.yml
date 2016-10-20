@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  enrollment_number: MyString
+  email: MyString
+  phone_number: MyString
+  date_of_birth: MyString
+  percentage_class_tenth: MyString
+  percentage_class_twelfth: MyString
+  cgpa: MyString
+  current_sgpa: MyString
+  current_log: MyString
+  degree: MyString
+
+two:
+  name: MyString
+  enrollment_number: MyString
+  email: MyString
+  phone_number: MyString
+  date_of_birth: MyString
+  percentage_class_tenth: MyString
+  percentage_class_twelfth: MyString
+  cgpa: MyString
+  current_sgpa: MyString
+  current_log: MyString
+  degree: MyString

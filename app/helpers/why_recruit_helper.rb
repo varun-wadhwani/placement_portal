@@ -1,0 +1,2 @@
+module WhyRecruitHelper
+end

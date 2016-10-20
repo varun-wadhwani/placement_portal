@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('../fonts/OpenSans-Regular.eot');
+	src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+a
+{ 
+	text-decoration: none; 
+}
+
+ul
+{ 
+	list-style: none;
+}
+/*
+	LEVEL ONE
+*/
+ul.dropdown
+{ 
+	position: relative;
+	z-index: 3;
+}
+ul.dropdown li 
+{ 	
+	font-weight: normal; float: left; zoom: 1; background: #000;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	color: #ffffff;
+	font-weight: normal;
+	font-size: 13px; 
+}
+ul.dropdown a:hover
+{
+	 color: #fff;  background: #000;
+}
+ul.dropdown li a       
+{
+	 display: block; padding: 8px 13px; border-right: 1px solid #333;
+	 color:#fff; background: #000; 
+}
+ul.dropdown li:last-child a        
+{ 
+	border-right: none; 
+} /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover
+{ 	
+	background: #000; color: #ffffff; position: relative; 
+}
+ul.dropdown li.hover a              
+{
+	 background: #000; color: #ffffff;
+ }
+/*
+	LEVEL TWO
+*/
+ul.dropdown ul 	
+{
+	color: #fff; font-size: 12px; width: 155px; visibility: hidden; position: absolute; 
+	top: 100%; left: -40px; 
+}
+ul.dropdown ul li 
+{
+	 font-weight: normal; font-size: 12px; text-transform:capitalize;
+	  background: #000; color: #fff;
+	border-bottom: 1px solid #ccc; float: none; 
+}
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a		
+{
+	 font-size: 12px;border-right: none; width: 100%; display: inline-block;  background: #000;
+}
+/*
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					
+{
+	 left: 86%; top: 0; 
+}
+ul.dropdown li:hover > ul 			
+{
+	 visibility: visible; 
+}
+

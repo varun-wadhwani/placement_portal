@@ -1,0 +1,2 @@
+module WrittenResultsHelper
+end

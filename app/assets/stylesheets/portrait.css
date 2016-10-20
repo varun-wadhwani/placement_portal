@@ -1,0 +1,50 @@
+#follow-callout {
+	margin: 0px; 
+	top: 140; 
+	width: 0px; 
+	right: 0px; 
+	overflow: visible; 
+	padding-left: 30px; 
+	position: fixed; 
+	min-height: 380px;
+
+}
+#follow-callout select {
+	max-width: 250px;
+}
+#follow-callout ul.tab-nav {
+	left: 0px;
+
+	top: 340px;
+	width: 400px;
+	position: absolute;
+	list-style:none;
+	text-decoration:none;
+}
+#follow-callout ul.tab-nav li a {
+	background: url("/~/media/Images/coresite/ui/sprite.ashx") no-repeat 2px -188px #000000; padding: 6px;text-decoration:none;
+	
+}
+#follow-callout ul.tab-nav li.on a {
+	background: url("/~/media/Images/coresite/ui/sprite.ashx") no-repeat 2px -212px #999999;text-decoration:none;
+}
+.csstransforms #follow-callout ul.tab-nav {
+	transform-origin: 0% 0%; transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -o-transform: rotate(-90deg); -webkit-backface-visibility: hidden; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -o-transform-origin: 0 0;text-decoration:none;
+}
+#follow-callout .tabs-content {
+	width: 320px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;text-decoration:none;
+	
+}
+#follow-callout aside {
+	transition:opacity 0.3s; left: 0px; top: 0px; width: 290px; display: none; position: absolute; min-height: 300px; opacity: 0; -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease;
+}
+#follow-callout aside.open {
+	display: block; opacity: 1;
+}
+.related .meta {
+	margin: 0px 0px 0px; display: block;
+}
+					
