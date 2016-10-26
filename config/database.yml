@@ -40,3 +40,7 @@ test:
   timeout: 5000
   username: varun
   password:
+  
+  production:
+  <<: *default
+database: db/production.postgresql
