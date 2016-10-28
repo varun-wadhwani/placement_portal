@@ -26,7 +26,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  host: 35.161.159.69
+  #host: 35.161.159.69
   database: placement_portal_development
   pool: 5
   timeout: 5000
