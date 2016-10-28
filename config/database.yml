@@ -30,7 +30,7 @@ development:
   database: placement_portal_development
   pool: 5
   timeout: 5000
-  username: varun
+  username: ubuntu
   password:
 
 test:
@@ -39,5 +39,5 @@ test:
   database: placement_portal_test
   pool: 5
   timeout: 5000
-  username: varun
+  username: ubuntu
   password:
