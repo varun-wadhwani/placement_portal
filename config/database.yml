@@ -41,3 +41,12 @@ test:
   timeout: 5000
   username: ubuntu
   password:
+  
+  production:
+   adapter: postgresql
+   encoding: unicode
+   database: placement_portal_test
+   pool: 5
+   timeout: 5000
+   username: ubuntu
+   password:
