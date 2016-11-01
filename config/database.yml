@@ -26,7 +26,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  host: placementportalinstance.cixxcd4mxyjf.us-west-2.rds.amazonaws.com
+  host: 113.193.111.208/32
   database: placement_portal_development
   pool: 5
   timeout: 5000
